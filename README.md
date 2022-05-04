@@ -106,4 +106,43 @@ Para mas información visitar: https://developer.mozilla.org/es/docs/Web/HTTP/He
 
 
 
+## HTML (Hypertext Markup Language)
+
+Es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+
+
+## Robots.txt 
+
+Robots.txt es un archivo que existe como forma para decirles a las personas que hacer peticiones, o web scraping que no ingresen tan recurrente o negar la petición a ciertas paginas web del sitio. Para acceder  este archivo de cualquier pagina web
+unicamente seguimos el siguiente patrón: **www.pagina_web.com/robots.txt**
+
+## XPath
+
+XPath es XML Path Language, es un lenguaje de patrones de busqueda y extracción que sirve para extraer información de archivos
+de etiqueta como lo es HTML. 
+XPath es a HTML como las expresiones regules son  a un texto.
+
+Por ejemplo, si queremos extraer el titulo de una pagina web realizamos la siguiente busqueda
+
+//div/span//h1[@class="title"][1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
