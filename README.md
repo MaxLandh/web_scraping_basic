@@ -1,2 +1,2 @@
-# web_scraping_basic
-Course of web scraping with Python and Xpath
+# Web Scraping With Python Basic
+## Course of web scraping with Python and Xpath
