@@ -119,12 +119,38 @@ unicamente seguimos el siguiente patrón: **www.pagina_web.com/robots.txt**
 ## XPath
 
 XPath es XML Path Language, es un lenguaje de patrones de busqueda y extracción que sirve para extraer información de archivos
-de etiqueta como lo es HTML. 
+de etiqueta (nodos) como lo es HTML. 
 XPath es a HTML como las expresiones regules son  a un texto.
 
 Por ejemplo, si queremos extraer el titulo de una pagina web realizamos la siguiente busqueda
 
 //div/span//h1[@class="title"][1]
+
+### Nodos
+
+Un nodo es lo mismo que una etiqueta y su contenido. Un nodo puede contener otros nodos. En otras palabras
+Xpath nos permite navegar en los diferentes tipos de profundidad deseados con el fin de extraer información.
+
+### Expresiones
+
+Para empezar a buscar con el lenguaje Xpath empezaremos con la sintaxis de la siguiente expresión.
+
+> $x('')
+
+Y adentro de las comillas simples empezaremos abuscar como lo vimos en la sección anterior
+
+> $x('/') 
+
+Con esta expresión estamos accediendo al documento entero
+
+> $x('//h1/a/text()').map(x=>x.wholeText)
+
+Con esta expresión estamos extrayendo el texto de la cabecera. 
+
+Para acceder a propiedades de un nodo unicamente utilizamos un arroba.
+
+> $x('//div/span//h1[@class="title"][1]') 
+
 
 
 
