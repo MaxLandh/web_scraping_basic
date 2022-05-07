@@ -213,6 +213,9 @@ Un axis o eje representa una relación contextual del nodo actual y se usa para 
 |preceding-sibling | Selects all siblings before the current node
 |self | Selects the current node
 
+Para realizar este tipo de busquedas utilizamos la siguiente sintaxis
+
+axis::node
 
 
 
