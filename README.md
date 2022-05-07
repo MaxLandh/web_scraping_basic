@@ -152,6 +152,69 @@ Para acceder a propiedades de un nodo unicamente utilizamos un arroba.
 > $x('//div/span//h1[@class="title"][1]') 
 
 
+## Predicados
+
+Cuando queremos realizar busquedas especificas en los nodos usaremos los predicados.
+Los predicados son un tipo de busqueda en el nodo especifico que siempre van entre corchetes []
+
+El predicado más simple es el 1, el cual nos traer el primer elemento de un nodo. El segundo predicado es **last()**
+Que nos trae el ultimo elemento de ese nodo.
+
+
+## Operadores
+
+Los operadores logicos nos ayudan a filtrar mas los nodos y llegar mas profundo a nuestra busqueda.
+Cabe aclarar que estos van adentro de los corchetes igual que el predicado.
+
+1. != 
+2. and
+3. or
+4. not()
+
+## Wildcards
+
+Los wildcards o comodinos son una herramienta para la cual se utiliza cuando no sabemos con precisión en donde
+se encuentra un nodo o como se llama precesiamente. Es una forma elegante de hacer una busqueda.
+Veamos algunos ejemplos:
+
+1. / -> Nos devuelve todo el documento HTML
+2. // -> Realiza salto de nodos en todo el documento HTML
+3. *(asterisco) -> Nos devuelve todos los nodos dentro de un nodo espesifico.
+4. @ se utiliza para especificar un atributo dentro de un nodo. @class, @iterprompt
+5. @* Nos devuelve todos los atributos de un nodo.
+6. node() a diferencia de * trae no solamente los nodos, sino también todo el contenido.
+
+## In-text Search
+
+Para buscar cadenas de caracteres especificas dentro de un texto.
+
+1. starts-with(.,"texto") Busca,para el nodo actual por eso el punto,  todas las cadenas de caracteres que empiecen por dicho texto.
+2. contains(., "texto") Busca, para el nodo actual, todas las cadenas de caracteres que contengan dicho texto.
+3. ends-with(., "texto") Busca,para el nodo actual por eso el punto,  todas las cadenas de caracteres que terminen por dicho texto.
+4. matches(., regex) Busca, para el nodo actual, mediante expresiones regulares y devuelve todo lo que haga match.
+
+## XPath Axes
+
+Un axis o eje representa una relación contextual del nodo actual y se usa para localizar nodos relativos al nodo actual.
+
+|AxisName | Result|
+|---------|--------|
+|ancestor | Selects all ancestors (parent, grandparent, etc.) of the current node
+|ancestor-or-self | Selects all ancestors (parent, grandparent, etc.) of the current node and the current node itself
+|attribute | Selects all attributes of the current node
+|child | Selects all children of the current node
+|descendant | Selects all descendants (children, grandchildren, etc.) of the current node
+|descendant-or-self | Selects all descendants (children, grandchildren, etc.) of the current node and the current node itself
+|following | Selects everything in the document after the closing tag of the current node
+|following-sibling | Selects all siblings after the current node
+|namespace | Selects all namespace nodes of the current node
+|parent | Selects the parent of the current node
+|preceding | Selects all nodes that appear before the current node in the document, except ancestors, attribute nodes and namespace nodes
+|preceding-sibling | Selects all siblings before the current node
+|self | Selects the current node
+
+
+
 
 
 
